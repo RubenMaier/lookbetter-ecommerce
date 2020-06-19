@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from './logo.svg';
+import datos from './datos';
 import './App.css';
 
 function App() {
@@ -34,118 +34,23 @@ function App() {
       </aside>
       <main className="main">
         <div className="content">
-          <div className="products">
-            <li>
-              <div className="product">
-                <img className="product-img" src="img/geek/remera1.jpg" alt="producto" />
-                <div className="product-name">
-                  <a href="producto.html">Remera geek 1</a>
-                </div>
-                <div className="product-brand">OwnBrand</div>
-                <div className="product-price">$ 0</div>
-                <div className="product-rating">4.5 Estrellas (10 Reseñas)</div>
-              </div>
-            </li>
-            <li>
-              <div className="product">
-                <img className="product-img" src="img/geek/remera1.jpg" alt="producto" />
-                <div className="product-name">
-                  <a href="producto.html">Remera geek 1</a>
-                </div>
-                <div className="product-brand">OwnBrand</div>
-                <div className="product-price">$ 0</div>
-                <div className="product-rating">4.5 Estrellas (10 Reseñas)</div>
-              </div>
-            </li>
-            <li>
-              <div className="product">
-                <img className="product-img" src="img/geek/remera1.jpg" alt="producto" />
-                <div className="product-name">
-                  <a href="producto.html">Remera geek 1</a>
-                </div>
-                <div className="product-brand">OwnBrand</div>
-                <div className="product-price">$ 0</div>
-                <div className="product-rating">4.5 Estrellas (10 Reseñas)</div>
-              </div>
-            </li>
-            <li>
-              <div className="product">
-                <img className="product-img" src="img/geek/remera1.jpg" alt="producto" />
-                <div className="product-name">
-                  <a href="producto.html">Remera geek 1</a>
-                </div>
-                <div className="product-brand">OwnBrand</div>
-                <div className="product-price">$ 0</div>
-                <div className="product-rating">4.5 Estrellas (10 Reseñas)</div>
-              </div>
-            </li>
-            <li>
-              <div className="product">
-                <img className="product-img" src="img/geek/remera1.jpg" alt="producto" />
-                <div className="product-name">
-                  <a href="producto.html">Remera geek 1</a>
-                </div>
-                <div className="product-brand">OwnBrand</div>
-                <div className="product-price">$ 0</div>
-                <div className="product-rating">4.5 Estrellas (10 Reseñas)</div>
-              </div>
-            </li>
-            <li>
-              <div className="product">
-                <img className="product-img" src="img/geek/remera1.jpg" alt="producto" />
-                <div className="product-name">
-                  <a href="producto.html">Remera geek 1</a>
-                </div>
-                <div className="product-brand">OwnBrand</div>
-                <div className="product-price">$ 0</div>
-                <div className="product-rating">4.5 Estrellas (10 Reseñas)</div>
-              </div>
-            </li>
-            <li>
-              <div className="product">
-                <img className="product-img" src="img/geek/remera1.jpg" alt="producto" />
-                <div className="product-name">
-                  <a href="producto.html">Remera geek 1</a>
-                </div>
-                <div className="product-brand">OwnBrand</div>
-                <div className="product-price">$ 0</div>
-                <div className="product-rating">4.5 Estrellas (10 Reseñas)</div>
-              </div>
-            </li>
-            <li>
-              <div className="product">
-                <img className="product-img" src="img/geek/remera1.jpg" alt="producto" />
-                <div className="product-name">
-                  <a href="producto.html">Remera geek 1</a>
-                </div>
-                <div className="product-brand">OwnBrand</div>
-                <div className="product-price">$ 0</div>
-                <div className="product-rating">4.5 Estrellas (10 Reseñas)</div>
-              </div>
-            </li>
-            <li>
-              <div className="product">
-                <img className="product-img" src="img/geek/remera1.jpg" alt="producto" />
-                <div className="product-name">
-                  <a href="producto.html">Remera geek 1</a>
-                </div>
-                <div className="product-brand">OwnBrand</div>
-                <div className="product-price">$ 0</div>
-                <div className="product-rating">4.5 Estrellas (10 Reseñas)</div>
-              </div>
-            </li>
-            <li>
-              <div className="product">
-                <img className="product-img" src="img/geek/remera1.jpg" alt="producto" />
-                <div className="product-name">
-                  <a href="producto.html">Remera geek 1</a>
-                </div>
-                <div className="product-brand">OwnBrand</div>
-                <div className="product-price">$ 0</div>
-                <div className="product-rating">4.5 Estrellas (10 Reseñas)</div>
-              </div>
-            </li>
-          </div>
+          <ul className="products">
+            {
+              datos.productos.map(producto =>
+                <li>
+                  <div className="product">
+                    <img className="product-img" src={producto.imagen} alt="producto" />
+                    <div className="product-name">
+                      <a href="producto.html">{producto.nombre}</a>
+                    </div>
+                    <div className="product-brand">{producto.marca}</div>
+                    <div className="product-price">${producto.precio}</div>
+                    <div className="product-rating">{producto.rating} Estrellas ({producto.numeroComentarios} reseñas)</div>
+                  </div>
+                </li>)
+            }
+
+          </ul>
         </div>
       </main>
       <footer className="footer">
