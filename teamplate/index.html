@@ -11,6 +11,9 @@
     <div class="grid-container">
         <header class="header">
             <div class="brand">
+                <button onclick="abrirMenu()">
+                    &#9776;
+                </button>
                 <a href="index.html">LookBetter</a>
             </div>
             <div class="header-links">
@@ -18,9 +21,117 @@
                 <a href="ingresar.html">Ingresar</a>
             </div>
         </header>
+        <aside class="sidebar">
+            <h3>Categorias</h3>
+            <button class="sidebar-close-button" onclick="cerrarMenu()">x</button>
+            <ul>
+                <li><a href="index.html">Remeras Geek</a></li>
+                <li><a href="index.html">Remeras Minimalista</a></li>
+            </ul>
+
+        </aside>
         <main class="main">
             <div class="content">
                 <div class="products">
+                    <li>
+                        <div class="product">
+                            <img class="product-img" src="img/geek/remera1.jpg" alt="producto">
+                            <div class="product-name">
+                                <a href="producto.html">Remera geek 1</a>
+                            </div>
+                            <div class="product-brand">OwnBrand</div>
+                            <div class="product-price">$ 0</div>
+                            <div class="product-rating">4.5 Estrellas (10 Reseñas)</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product">
+                            <img class="product-img" src="img/geek/remera1.jpg" alt="producto">
+                            <div class="product-name">
+                                <a href="producto.html">Remera geek 1</a>
+                            </div>
+                            <div class="product-brand">OwnBrand</div>
+                            <div class="product-price">$ 0</div>
+                            <div class="product-rating">4.5 Estrellas (10 Reseñas)</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product">
+                            <img class="product-img" src="img/geek/remera1.jpg" alt="producto">
+                            <div class="product-name">
+                                <a href="producto.html">Remera geek 1</a>
+                            </div>
+                            <div class="product-brand">OwnBrand</div>
+                            <div class="product-price">$ 0</div>
+                            <div class="product-rating">4.5 Estrellas (10 Reseñas)</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product">
+                            <img class="product-img" src="img/geek/remera1.jpg" alt="producto">
+                            <div class="product-name">
+                                <a href="producto.html">Remera geek 1</a>
+                            </div>
+                            <div class="product-brand">OwnBrand</div>
+                            <div class="product-price">$ 0</div>
+                            <div class="product-rating">4.5 Estrellas (10 Reseñas)</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product">
+                            <img class="product-img" src="img/geek/remera1.jpg" alt="producto">
+                            <div class="product-name">
+                                <a href="producto.html">Remera geek 1</a>
+                            </div>
+                            <div class="product-brand">OwnBrand</div>
+                            <div class="product-price">$ 0</div>
+                            <div class="product-rating">4.5 Estrellas (10 Reseñas)</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product">
+                            <img class="product-img" src="img/geek/remera1.jpg" alt="producto">
+                            <div class="product-name">
+                                <a href="producto.html">Remera geek 1</a>
+                            </div>
+                            <div class="product-brand">OwnBrand</div>
+                            <div class="product-price">$ 0</div>
+                            <div class="product-rating">4.5 Estrellas (10 Reseñas)</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product">
+                            <img class="product-img" src="img/geek/remera1.jpg" alt="producto">
+                            <div class="product-name">
+                                <a href="producto.html">Remera geek 1</a>
+                            </div>
+                            <div class="product-brand">OwnBrand</div>
+                            <div class="product-price">$ 0</div>
+                            <div class="product-rating">4.5 Estrellas (10 Reseñas)</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product">
+                            <img class="product-img" src="img/geek/remera1.jpg" alt="producto">
+                            <div class="product-name">
+                                <a href="producto.html">Remera geek 1</a>
+                            </div>
+                            <div class="product-brand">OwnBrand</div>
+                            <div class="product-price">$ 0</div>
+                            <div class="product-rating">4.5 Estrellas (10 Reseñas)</div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="product">
+                            <img class="product-img" src="img/geek/remera1.jpg" alt="producto">
+                            <div class="product-name">
+                                <a href="producto.html">Remera geek 1</a>
+                            </div>
+                            <div class="product-brand">OwnBrand</div>
+                            <div class="product-price">$ 0</div>
+                            <div class="product-rating">4.5 Estrellas (10 Reseñas)</div>
+                        </div>
+                    </li>
                     <li>
                         <div class="product">
                             <img class="product-img" src="img/geek/remera1.jpg" alt="producto">
@@ -39,6 +150,15 @@
             Derechos reservados
         </footer>
     </div>
+
+    <script>
+        function abrirMenu() {
+            document.querySelector(".sidebar").classList.add("open");
+        }
+        function cerrarMenu() {
+            document.querySelector(".sidebar").classList.remove("open");
+        } 
+    </script>
 </body>
 
 </html>
