@@ -41,6 +41,8 @@ a:hover {
 }
 .header-links a {
     color: gray;
+    text-decoration: none;
+    padding: 1rem;
 }
 .header-links a:hover {
     color: white;

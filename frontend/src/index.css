@@ -7,6 +7,9 @@ body {
     height: 100vh;
     margin: 0;
 }
+#root {
+    height: 100%;
+}
 a {
     color: black;
     text-decoration: none;
@@ -41,6 +44,8 @@ a:hover {
 }
 .header-links a {
     color: gray;
+    text-decoration: none;
+    padding: 1rem;
 }
 .header-links a:hover {
     color: white;
@@ -55,46 +60,6 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-/* Pagina de inicio */
-.products {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-}
-.products li {
-    flex: 0 1 34rem;
-    margin: 1rem; 
-    height: 50rem;
-    border-bottom: .1rem gray solid;
-    list-style-type: none; /* le quito el circulito */
-    padding: 0;
-}
-.product {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    height: 100%;
-}
-.product-img {
-    max-width: 34rem;
-    max-height: 34rem;
-}
-.product-name {
-    font-size: 2rem;
-    font-weight: bold;
-}
-.product-brand {
-    font-size: 1.2rem;
-    color: grey;
-}
-.product-price {
-    font-size: 2rem;
-    font-weight: bold;
-}
-.product-rating {
-    margin-bottom: 1rem;
 }
 
 /* Sidebar */
