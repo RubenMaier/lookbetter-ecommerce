@@ -1,0 +1,35 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend del e-commerce",
+  "main": "backend/server.js",
+  "scripts": {
+    "start-dev": "nodemon --watch backend --exec babel-node backend/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RubenMaier/lookbetter-ecommerce.git"
+  },
+  "keywords": [
+    "e-commerce",
+    "lookbetter",
+    "developer",
+    "backend"
+  ],
+  "author": "Ruben Maier Enzler",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RubenMaier/lookbetter-ecommerce/issues"
+  },
+  "homepage": "https://github.com/RubenMaier/lookbetter-ecommerce#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.3",
+    "@babel/core": "^7.10.3",
+    "@babel/node": "^7.10.3",
+    "@babel/preset-env": "^7.10.3",
+    "nodemon": "^2.0.4"
+  }
+}
