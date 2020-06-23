@@ -27,7 +27,7 @@ function App() {
           </div>
         </header>
         <aside className="sidebar">
-          <h3>Categorias</h3>
+          <h3>Categorías</h3>
           <button className="sidebar-close-button" onClick={cerrarMenu}>x</button>
           <ul>
             <li><a href="index.html">Remeras Geek</a></li>

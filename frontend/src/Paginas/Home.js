@@ -1,13 +1,28 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'
-import datos from '../datos';
+import axios from 'axios'
 import './home.css'
 
 function Home(props) {
+    const [productos, setProductos] = useState([])
+
+    useEffect(() => {
+        const buscarDatos = async () => {
+            axios.defaults.baseURL = window.location.protocol + "//" + window.location.hostname + ":5000";
+            const { data } = await axios.get("/api/productos") // data es el nombre del atributo del objeto json que retorna la promesa
+            setProductos(data)
+
+        }
+        buscarDatos()
+        return () => {
+            //cleanup
+        }
+    }, [])
+
     return <ul className="products">
         {
-            datos.productos.map(producto =>
-                <li>
+            productos.map(producto =>
+                <li key={producto._id}>
                     <div className="product">
                         <Link to={'/producto/' + producto._id}>
                             <img className="product-img" src={producto.imagen} alt="producto" />

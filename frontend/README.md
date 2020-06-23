@@ -1,3 +1,11 @@
+Iniciamos un proyecto de React.js dentro de la carpeta "frontend".
+```
+```
+Incluimos la librería *axios*.
+```
+npm i axios
+```
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
