@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Route, Link } from 'react-router-dom'
 import './App.css';
-import PaginaHome from './Paginas/Home'
-import PaginaProducto from './Paginas/Producto'
+import PaginaHome from './paginas/Home'
+import PaginaProducto from './paginas/Producto'
 
 function App() {
   const abrirMenu = () => {

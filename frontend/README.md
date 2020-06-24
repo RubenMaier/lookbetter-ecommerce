@@ -1,10 +1,16 @@
 Iniciamos un proyecto de React.js dentro de la carpeta "frontend".
 ```
+npm create-react-app frontend
 ```
 Incluimos la librería *axios*.
 ```
 npm i axios
 ```
+Incluimos también Redux y Thunk
+```
+npm i redux react-redux redux-thunk
+```
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
