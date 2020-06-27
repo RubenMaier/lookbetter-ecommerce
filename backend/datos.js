@@ -8,7 +8,8 @@ export default {
             precio: 1,
             marca: 'LookBetter',
             rating: 4.5,
-            numeroComentarios: 10
+            numeroComentarios: 10,
+            cantidadEnStock: 4
         },
         {
             _id: '2',
@@ -18,7 +19,8 @@ export default {
             precio: 1,
             marca: 'LookBetter',
             rating: 4.5,
-            numeroComentarios: 10
+            numeroComentarios: 10,
+            cantidadEnStock: 4
         },
         {
             _id: '3',
@@ -28,7 +30,8 @@ export default {
             precio: 1,
             marca: 'LookBetter',
             rating: 4.5,
-            numeroComentarios: 10
+            numeroComentarios: 10,
+            cantidadEnStock: 4
         },
         {
             _id: '4',
@@ -38,7 +41,8 @@ export default {
             precio: 1,
             marca: 'LookBetter',
             rating: 4.5,
-            numeroComentarios: 10
+            numeroComentarios: 10,
+            cantidadEnStock: 4
         },
         {
             _id: '5',
@@ -48,7 +52,8 @@ export default {
             precio: 1,
             marca: 'LookBetter',
             rating: 4.5,
-            numeroComentarios: 10
+            numeroComentarios: 10,
+            cantidadEnStock: 4
         },
         {
             _id: '6',
@@ -58,7 +63,8 @@ export default {
             precio: 1,
             marca: 'LookBetter',
             rating: 4.5,
-            numeroComentarios: 10
+            numeroComentarios: 10,
+            cantidadEnStock: 4
         },
         {
             _id: '7',
@@ -68,7 +74,8 @@ export default {
             precio: 1,
             marca: 'LookBetter',
             rating: 4.5,
-            numeroComentarios: 10
+            numeroComentarios: 10,
+            cantidadEnStock: 0
         },
     ]
 }

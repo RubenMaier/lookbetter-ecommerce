@@ -40,11 +40,19 @@
     padding: 1rem;
     border: .1rem gray solid;
     border-radius: 0.5rem;
-    cursor: pointer;
     background-color: white;
+    cursor: pointer;
 }
 .next-button:hover {
     border-color: black;
+}
+.next-button-disabled {
+    padding: 1rem;
+    border: .1rem gray solid;
+    border-radius: 0.5rem;
+    background-color: #e7e7e7;
+    color: gray;
+    pointer-events: none;
 }
 .back-button {
     padding: 2rem;

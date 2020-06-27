@@ -33,7 +33,6 @@ function App() {
             <li><a href="index.html">Remeras Geek</a></li>
             <li><a href="index.html">Remeras Minimalista</a></li>
           </ul>
-
         </aside>
         <main className="main">
           <div className="content">
