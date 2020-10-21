@@ -1,0 +1,23 @@
+.header {
+    grid-area: header;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between; /* coloco a los sub-contenedores en los extremos horizontales */
+    align-items: center; /* alineo verticalmente a todos los sub-componentes */
+    padding: 0.5rem;
+}
+.brand a {
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+.header-links a {
+    color: gray;
+    text-decoration: none;
+    padding: 1rem;
+}
+.header-links a:hover {
+    color: white;
+}
